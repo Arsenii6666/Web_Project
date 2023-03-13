@@ -3,11 +3,15 @@
   <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
   <title>Treveling</title>
   </head>
   <body>
     <header class="header">
-      <span class="Site name">Treloo</span>
+      <span class="Site-name">Treloo</span>
       <nav class="header-nav">
         <a class="header-link" href="#">Review</a>
         <a class="header-link" href="#">Tips</a>
@@ -18,61 +22,75 @@
     </header>
     <main>
       <section class="banner">
-        <img class="title background-img" src="./icons/title.png" alt="title" />
-        <h1 class="Main description">Discover Your Life, Travel Where You Want</h1> 
-        <h2 class="Sub description">Would you explore natur paradise in the world, let’s find the best destination in world with us.</h1>
+        <img class="title-background-img" src="./icons/title.png" alt="title" />
+        <h1 class="Main-description">Discover Your Life, Travel Where You Want</h1> 
+        <h2 class="Sub-description">Would you explore natur paradise in the world, let’s find the best destination in world with us.</h2>
       </section>
-      <section class="Flight booking">  
-        <nav class="chose section">
-          <button class="choose button"><img class="plane icon" src="./icons/plain.png" alt="plane"> Flight</button>    
-          <button class="choose button"><img class="hotel icon" src="./icons/hotel.png" alt="hotel"> Hotel</button>
+      <section class="Flight_booking">  
+        <nav class="chose_section">
+          <button class="choose_section_button"><img class="plane icon" src="./icons/plain.png" alt="plane"> Flight</button>    
+          <button class="choose_section_button"><img class="hotel icon" src="./icons/hotel.png" alt="hotel"> Hotel</button>
         </nav>
-        <div class="choose destination">
-          <span class="description">
-          Living from <img class="horizontal plane icon" src="./icons/horizontal_plane.png" alt="plane"> Going to
-          </span>
-          <p class="choose">
-            <input type="text" id="Dubai" /> <input type="text" id="New York" />
-          </p>
-        </div>
-        <div class="chose date">
-          <p class="description">
-            Leave
+        <div class="flight_section">
+          <div class="choose_box">
+            <span class="description">
+            Living from
+            </span>
             <img class="horizontal plane icon" src="./icons/horizontal_plane.png" alt="plane">
+            <span class="description">
+            Going to
+            </span>
+            <input type="text" id="Dubai" />
+            <div class="skip"></div>
+            <input type="text" id="New York" />
+          </div>
+          <div class="choose_box">
+            <span class="description">
+              Leave
+              <img class="horizontal plane icon" src="./icons/horizontal_plane.png" alt="plane">
+            </span>
             <img class="planer icon" src="./icons/Planer.png" alt="planer">
+            <span class="description">
             Return
             <img class="horizontal plane icon" src="./icons/horizontal_plane.png" alt="plane">
-          </p>
-          <p class="choose">
-            <input type="date" id="23 Jan, Sat" /> <input type="date" id="14 Jan, Thu" />
-          </p>
+            </span>
+            <input type="date" id="23 Jan, Sat" />
+            <div class="skip"></div>
+            <input type="date" id="14 Jan, Thu" />
+          </div>
+          <img class="search_icon" src="./icons/search.png" alt="search">
         </div>
-        <img class="search icon" src="./icons/search.png" alt="search">
-      </section>
-      <section class="proposes">
-        <h1 class="propose title">Special Upcoming Offers</h1>
-        <nav class="chose proposition format">
-          <button class="choose button">Team</button>
-          <button class="choose button">Couple</button>
-          <button class="choose button">Family</button>
+        </section>
+        <h1 class="propose_title">Special Upcoming Offers</h1>
+        <nav class="chose_proposition_format">
+          <button class="choose_button">Team</button>
+          <button class="choose_button">Couple</button>
+          <button class="choose_button">Family</button>
         </nav>
+      <section class="proposes">
         <article class="proposition">
-          <img class="proposition image" src="./icons/loga_sea.png" alt="propose">
-          <p class="date">14 FEB 2022</p>
+          <div class="image_data">
+            <img class="proposition_image" src="./icons/loga_sea.png" alt="propose">
+            <span class="date">14 FEB 2022</span>
+          </div>
           <span class="info">Relax, 3 day, 3 night</span>
           <h4 class="Propose name">Loga sea</h4>
           <p class="price">700$/person <a class="booking link" href="#">Book now</a></p>
         </article>
         <article class="proposition">
-          <img class="proposition image" src="./icons/shaford.png" alt="propose">
-          <p class="date">18 JUN 2022</p>
+          <div class="image_data">
+            <img class="proposition_image" src="./icons/shaford.png" alt="propose">
+            <span class="date">18 JUN 2022</span>
+          </div>
           <span class="info">Adventure, 4 day, 3 night</span>
           <h4 class="Propose name">Ansgar Scheffold</h4>
           <p class="price">400$/person <a class="booking link" href="#">Book now</a></p>
         </article>
         <article class="proposition">
-          <img class="proposition image" src="./icons/lona_x.png" alt="propose">
-          <p class="date">22 DEC 2022</p>
+          <div class="image_data">
+            <img class="proposition_image" src="./icons/lona_x.png" alt="propose">
+            <span class="date">22 DEC 2022</span>
+          </div>
           <span class="info">Relax, 7 day, 6 night</span>
           <h4 class="Propose name">Lona X</h4>
           <p class="price">340$/person <a class="booking link" href="#">Book now</a></p>
@@ -149,7 +167,7 @@
         <button class="Registration">Register Today</button>
       </section>
     </main>
-    <footer>
+    <footer class="Foot">
       <p class="small comment">© 2022 Treloo LLC - All right reserved.</p>
         <nav class="header-nav">
           <a class="header-link" href="#">Review</a>
