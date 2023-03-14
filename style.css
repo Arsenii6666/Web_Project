@@ -4,6 +4,9 @@
     font-style: normal;
     color: black;
 }
+body {
+    background-color: #E5E5E5;
+  }
 /*Header */
 .Site-name{
     position: absolute;
@@ -107,11 +110,10 @@
     background-color: #FFFFFF;
     border-color: white;
 }
-
 .flight_section{
     position: relative;
     display: flex;
-    justify-content: space-around;;
+    justify-content: space-around;
     align-content: center;
     align-items: center;
     left: 5%;
@@ -121,7 +123,6 @@
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
     border-radius: 0px 50px 50px 50px;
 }
-
 .choose_box{
     background-color: white;
     border: 2px solid #ACACAC80;
@@ -130,10 +131,19 @@
     grid-template-rows: 40% 40%;
     justify-content: center;
     align-content: center;
-    gap: 10px;
+    gap: 15px;
     border-radius: 25px;
     top: 10%;
     height: 100%;
+}
+.mid_img{
+    top: 30%;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border: 1px dashed rgba(0, 0, 0, 0.5);
+    color: #00000080;
+    border-radius: 40px;
 }
 .search_icon{
     height: 100px;
@@ -153,18 +163,20 @@
 .chose_proposition_format{
     position: relative;
     display: flex;
-    width: 100%;
-    height: 100%;
+    height: 70px;
     gap: 30px;
-    background: #FFFFFF;
+    background: white;
+    width: 40%;
+    left: 30%;
     box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.05);
-    border-radius: 10px;
-    text-align: center;
+    border-radius: 25px;
     justify-content: center;
+    align-content: center;
+    align-items: center;
     bottom: 20px;
 }
 .choose_button{
-    width: 100px;
+    width: 25%;
     height: 46px;
     left: 540px;
     top: 302px;
@@ -204,24 +216,97 @@
     position: absolute;
     left: 38%;
     transform: rotate(90deg);
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 27px;
     width: 100%;
+}
+.tag{
+    background-color: #FCDDEC;
+    font-size: 25px;
+    width: 120%;
+    height: 21px;
+    border-radius: 100px;
+    padding: 5px;
+    margin: 20%;
+}
+.duration{
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 21px;
+    color: rgba(0, 0, 0, 0.5);
+    text-align: right;
+}
+.price{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 36px;
+    margin: 10%;
+}
+.name{
+    margin: 10%;
+}
+.booking_link{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #3E86F5;
+    margin: 10%;
 }
 /*Promo */
 .Promo{
     top: 100px;
+    position: relative;
     display: flex;
-    gap: 20px;
-    height: 80%;
-    width: 120%;
+    height: 100%;
+    width: 100%;
 }
 .image_and_comments{
     position: relative;
-    width: 200%;
+    width: 40%;
 }
 .promo_image{
+    position: relative;
     height: 100%;
     left: 5%;
-    width: 100%;
+    width: 95%;
+    
+}
+.comment{
+    position: absolute;
+    text-align: center;
+    width: 41%;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 35px;
+}
+.number{
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1px;
+    color: #3E86F5;
+}
+.comment_text{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+}
+.one{
+    top: 10%;
+    left: 70%;
+}
+.two{
+    top: 60%;
+    left: 1%;
+}
+.three{
+    top: 80%;
+    left: 70%;
+}
+.promo_other_info{
+    position: relative;
+    left: 5%;
+    width: 55%;
 }
 .promo_title{
     width: 60%;
@@ -230,32 +315,95 @@
     line-height: 72px;
 }
 .promo_text{
-    width: 60%;
+    width: 100%;
     font-weight: 400;
     font-size: 20px;
     line-height: 200%;
 }
 .Promo_button{
+    position: relative;
+    left: 5%;
+    width: 179px;
+height: 75px;
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
+    background: #3E86F5;
+    border-radius: 10px;
 }
 /*recomandtion */
 .Recomendation_title{
+    position: relative;
+    top: 120px;
     font-weight: 600;
     font-size: 48px;
     line-height: 72px;
     text-align: center;
+    bottom: 30px;
+}
+.chose_recomendation_format{
+    position: relative;
+    top: 100px;
+    display: flex;
+    height: 70px;
+    gap: 30px;
+    background: white;
+    width: 50%;
+    left: 25%;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.05);
+    border-radius: 25px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    bottom: 20px;
 }
 .Recomendations{
-    height: 200px;
+    position: relative;
+    top: 200px;
+    height: 120%;
     display: flex;
+    gap: 20px;
     justify-content: space-around;
-
 }
 .recomendation{
+    position: relative;
     height: 100%;
     width: 80%;
+    background-color: white;
+}
+.recomendation_image{
+    position: relative;
+    top: 5px;
+    width: 90%;
+    left: 5%;
+}
+.reting{
+    top: 1%;
+    position: absolute;
+    width: 45px;
+    background-color: white;
+    z-index: 1;
+    left: 75%;
+    border-radius: 25px;
+}
+.propose_text{
+    position: relative;
+    left: 5%;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+}
+.location{
+    position: relative;
+    left: 5%;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #00000080;
+}
+.pointer_icon{
+    width: 17px;
+    height: 17px;
 }
 /*citation*/
 .Citations{
@@ -266,7 +414,7 @@
     height: 1000px;
 }
 .Citation{
-    background-color: wheat;
+    background-color: white;
     position: relative;
     height: 60%;
     width: 40%;
@@ -323,6 +471,7 @@
     display: flex;
     justify-content: center;
     gap: 20px;
+    background-color: #E5E5E5;;
 }
 /*foter */
 .Final{
